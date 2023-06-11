@@ -11,9 +11,11 @@ class HomeController extends AbstractController
     #[Route('/', name: 'home')]
     public function index(): Response
     {
+        
 
         $questions =[
             [
+                'id' => '1',
                 'title' => 'je suis une super question',
                 'content' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque reprehenderit ratione eveniet iste quidem itaque deleniti esse corrupti, ipsum recusandae at omnis quibusdam vero incidunt officiis odio, excepturi tempore natus.',
                 'rating' => 20,
@@ -25,6 +27,7 @@ class HomeController extends AbstractController
 
             ],
             [
+                'id' => '2',
                 'title' => 'je suis une super question',
                 'content' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque reprehenderit ratione eveniet iste quidem itaque deleniti esse corrupti, ipsum recusandae at omnis quibusdam vero incidunt officiis odio, excepturi tempore natus.',
                 'rating' => 0,
@@ -36,6 +39,7 @@ class HomeController extends AbstractController
 
             ],
             [
+                'id' => '3',
                 'title' => 'je suis une super question',
                 'content' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque reprehenderit ratione eveniet iste quidem itaque deleniti esse corrupti, ipsum recusandae at omnis quibusdam vero incidunt officiis odio, excepturi tempore natus.',
                 'rating' => -15,
