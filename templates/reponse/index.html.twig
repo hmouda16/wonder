@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon Profile
+{% endblock %}
+
+{% block body %}
+
+
+	<div class="block">
+		<h3 class="pb-30">Mes reponses</h3>
+		<ul>
+			{% for comment in app.user.comments %}
+				<li>{{comment.content | slice(0,50)}}...</li>
+			{% endfor %}
+		</ul>
+	</div>
+
+{% endblock %}

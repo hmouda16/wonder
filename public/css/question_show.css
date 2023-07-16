@@ -7,12 +7,6 @@
   padding: 5px 10px;
 }
 
-.question-show,
-.question-response-text {
-  line-height: var(--line-height-hight);
-  white-space: pre-wrap;
-}
-
 small {
   color: var(--gray);
   opacity: 0.7;
